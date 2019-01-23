@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
   def create 
     dude = Student.create(first_name: params[:first_name], last_name: params[:last_name])
     @rams = params
-    render "show"
+    render "new"
   end 
       
 end
